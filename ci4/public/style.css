@@ -261,3 +261,31 @@ box img {
 .alert {
   color: red;
 }
+.pagination li {
+  list-style: none;
+}
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.5;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(32, 79, 199);
+  border: 1px solid rgb(20, 20, 19);
+  margin-right: 0.2rem;
+}
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: rgb(16, 42, 245);
+  border-color: rgb(33, 128, 210);
+}

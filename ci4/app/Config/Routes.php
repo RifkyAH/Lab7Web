@@ -2,6 +2,8 @@
 
 namespace Config;
 
+use App\Controllers\User;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -42,6 +44,7 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->add('artikel/add', 'Artikel::add');
     $routes->add('artikel/edit/(:any)', 'Artikel::edit/$1');
     $routes->get('artikel/delete/(:any)', 'Artikel::delete/$1');
+    $routes->get('logout', 'User::logout');
 });
 /*
  * --------------------------------------------------------------------
