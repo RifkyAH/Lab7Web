@@ -46,6 +46,7 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->get('artikel/delete/(:any)', 'Artikel::delete/$1');
     $routes->get('logout', 'User::logout');
 });
+$routes->resource('post');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

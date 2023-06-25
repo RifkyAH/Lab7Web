@@ -1,0 +1,36 @@
+CRITICAL - 2023-06-24 07:39:57 --> Class "App\Controllers\Controller" does not exist
+in SYSTEMPATH\Commands\Utilities\Routes\ControllerMethodReader.php on line 43.
+ 1 SYSTEMPATH\Commands\Utilities\Routes\ControllerMethodReader.php(43): ReflectionClass->__construct('App\\Controllers\\Controller')
+ 2 SYSTEMPATH\Commands\Utilities\Routes\AutoRouteCollector.php(52): CodeIgniter\Commands\Utilities\Routes\ControllerMethodReader->read('App\\Controllers\\Controller', 'Home', 'index')
+ 3 SYSTEMPATH\Commands\Utilities\Routes.php(146): CodeIgniter\Commands\Utilities\Routes\AutoRouteCollector->get()
+ 4 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Utilities\Routes->run([])
+ 5 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('routes', [])
+ 6 ROOTPATH\spark(97): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-06-24 07:48:30 --> Class "App\Controllers\Controller" does not exist
+in SYSTEMPATH\Commands\Utilities\Routes\ControllerMethodReader.php on line 43.
+ 1 SYSTEMPATH\Commands\Utilities\Routes\ControllerMethodReader.php(43): ReflectionClass->__construct('App\\Controllers\\Controller')
+ 2 SYSTEMPATH\Commands\Utilities\Routes\AutoRouteCollector.php(52): CodeIgniter\Commands\Utilities\Routes\ControllerMethodReader->read('App\\Controllers\\Controller', 'Home', 'index')
+ 3 SYSTEMPATH\Commands\Utilities\Routes.php(146): CodeIgniter\Commands\Utilities\Routes\AutoRouteCollector->get()
+ 4 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Utilities\Routes->run([])
+ 5 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('routes', [])
+ 6 ROOTPATH\spark(97): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-06-24 08:02:21 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 391.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\lab7_ci\\ci4\\public\\index.php')
+CRITICAL - 2023-06-24 08:04:05 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 391.
+ 1 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Post.php(57): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Post->update(null)
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Post))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\lab7_ci\\ci4\\public\\index.php')
